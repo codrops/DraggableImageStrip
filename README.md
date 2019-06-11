@@ -1,6 +1,6 @@
 # Draggable Image Strip
 
-A draggable image strip layout with a content preview powered by Draggabilly and TweenMax.
+A draggable image strip layout with a content preview powered by [Draggabilly](https://draggabilly.desandro.com/) and [TweenMax](https://greensock.com/tweenmax).
 
 ![Draggable Image Strip](https://tympanus.net/codrops/wp-content/uploads/2019/06/DraggableImageStrip.jpg)
 
