@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Draggable Image Strip | Codrops</title>
+		<meta name="description" content="A draggable image strip layout with a content preview powered by Draggabilly and TweenMax." />
+		<meta name="keywords" content="draggable, images, horizontal, layout, flexbox, grid, css, tweenmax, draggabilly, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/ugp0unb.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="loading">
+		<main>
+			<div class="frame">
+				<div class="frame__title-wrap">
+					<h1 class="frame__title">Draggable Image Strip</h1>
+					<div class="frame__links">
+						<a href="http://tympanus.net/Tutorials/GridToFullscreenAnimations/">Previous demo</a>
+						<a href="https://tympanus.net/codrops/?p=40863">Article</a>
+						<a href="https://github.com/codrops/DraggableImageStrip/">GitHub</a>
+					</div>
+				</div>
+				<h3 class="frame__subtitle">Morandi - 2019</h3>
+				<div class="frame__indicator"></div>
+			</div>
+			<div class="strip-outer">
+				<div class="strip-inner">
+					<div class="draggable"></div>
+					<div class="strip">
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-s"><div class="img-inner" style="background-image:url('img/1.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>01</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-m"><div class="img-inner" style="background-image:url('img/2.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>02</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-xl"><div class="img-inner" style="background-image:url('img/3.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>03</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-l"><div class="img-inner" style="background-image:url('img/4.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>04</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-s"><div class="img-inner" style="background-image:url('img/5.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>05</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-m"><div class="img-inner" style="background-image:url('img/6.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>06</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-s"><div class="img-inner" style="background-image:url('img/7.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>07</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-l"><div class="img-inner" style="background-image:url('img/8.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>08</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-s"><div class="img-inner" style="background-image:url('img/9.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>09</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer"><div class="img-inner" style="background-image:url('img/10.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>10</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-s"><div class="img-inner" style="background-image:url('img/11.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>11</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-xl"><div class="img-inner" style="background-image:url('img/12.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>12</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-s"><div class="img-inner" style="background-image:url('img/13.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>13</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-l"><div class="img-inner" style="background-image:url('img/14.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>14</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-s"><div class="img-inner" style="background-image:url('img/15.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>15</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-l"><div class="img-inner" style="background-image:url('img/16.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>16</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-m"><div class="img-inner" style="background-image:url('img/17.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>17</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer"><div class="img-inner" style="background-image:url('img/18.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>18</span></a><span class="strip__item-plus"></span></span>
+						</div>
+						<div class="strip__item">
+							<div class="img-outer img-outer--size-s"><div class="img-inner" style="background-image:url('img/19.jpg');"></div></div>
+							<span class="strip__item-number"><a class="strip__item-link"><span>19</span></a><span class="strip__item-plus"></span></span>
+						</div>
+					</div><!--/strip-->
+				</div><!--/strip-inner-->
+				<div class="strip-cover">
+					<h2 class="strip-cover__title">Morandi</h2>
+					<span class="strip-cover__subtitle">2019</span>
+				</div>
+			</div><!--/strip-outer-->
+			<div class="content">
+				<article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/1.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Assemblage</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/2.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Wherewithal</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/3.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Surreptitious</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/4.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Onomatopoeia</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/5.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Nemesis</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/6.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Penumbra</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/7.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Cathedral</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/8.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Propinquity</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/9.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Lissome</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/10.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Moiety</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/11.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Mondegreen</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/12.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Cathedral</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/13.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Gambol</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/14.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Forbearance</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/15.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Evanescent</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/16.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Embrocation</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/17.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Bucolic</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/18.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Eloquence</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-outer img-outer--content">
+						<div class="img-inner img-inner--content" style="background-image: url(img/19.jpg);"></div>
+					</div>
+					<div class="content__item-copy">
+						<h2 class="content__item-title">Cathedral</h2>
+						<p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
+					</div>
+				</article>
+				<button class="content__close" aria-label="Close content"><svg width="12" height="26" viewBox="0 0 12 26"><path d="M5.293 25H5v-.293l-5-5L.707 19 5 23.293V0h1v23.657L10.657 19l.707.707-5.657 5.657-.025-.025-.025.025L5.293 25z"/></svg></svg></button>
+			</div>
+		</main>
+		<div class="cursor">
+			<div class="cursor__inner cursor__inner--circle">
+				<div class="cursor__side cursor__side--left"></div>
+				<div class="cursor__side cursor__side--right"></div>
+			</div>
+		</div>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/draggabilly.pkgd.min.js"></script>
+		<script src="js/demo.js"></script>
+		<script>
+			// Preload all the images in the page
+			imagesLoaded(document.querySelectorAll('.img-inner'), {background: true}, () => document.body.classList.remove('loading'));
+		</script>
+	</body>
+</html>
